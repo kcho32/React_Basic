@@ -18,34 +18,14 @@ class TodoCtrl extends Component {
   }
 
   handleChange = (value, object)=>{
-    if (object === "title") {
-      this.setState(
-        {
-          todo: {
-            title: value,
-            index: this.state.todo.index
-          },
-        }
-      );
-    } else if (object === "date") {
-      this.setState(
-        {
-          todo: {
-            date: value,
-            index: this.state.todo.index
-          },
-        }
-      );
-    } else if (object === "content") {
-      this.setState(
-        {
-          todo: {
-            content: value,
-            index: this.state.todo.index
-          },
-        }
-      );
-    }
+    this.setState(
+      {
+        todo: {
+          [object]: value,
+          index: this.state.todo.index
+        },
+      }
+    );
   }
   
   

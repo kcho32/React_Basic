@@ -3,6 +3,7 @@ import {observer} from 'mobx-react';
 import BookStore from '../store/BookStore';
 import BookDetailView from '../components/BookDetailView';
 
+//Controller
 class BookContainer extends Component {
   bookStore = BookStore;
   render() {
