@@ -1,6 +1,7 @@
 import {makeAutoObservable} from 'mobx';
 import Books from '../Books';
 
+//Model
 class BookStore {
   book = Books[0];
   books = Books;

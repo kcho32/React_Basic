@@ -6,7 +6,7 @@ class TodoList extends Component {
     const {todoData, onSelect} = this.props;
     const todoList = todoData.map(todo=>{
       return (
-        <TodoItem key={todo.index} todo={todo} onSelect={onSelect}/>
+        <><input type="radio" name="index" onClick={() => onSelect(todo)} /><TodoItem key={todo.index} todo={todo} onSelect={onSelect} /></>
       )
     })
 
