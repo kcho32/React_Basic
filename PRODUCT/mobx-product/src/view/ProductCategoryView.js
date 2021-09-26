@@ -3,9 +3,11 @@ import React, { Component } from 'react';
 class ProductCategoryView extends Component {
   render() {
     return (
-      <div>
-        
-      </div>
+        <tr>
+          <th colSpan="2">
+            {this.props.category}
+          </th>
+        </tr>
     );
   }
 }
